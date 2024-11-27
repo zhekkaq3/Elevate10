@@ -1,0 +1,22 @@
+<svg width="550" height="340" viewBox="0 0 550 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.4" clip-path="url(#clip0_1_9)">
+<line x1="0.00181817" y1="284.5" x2="550.002" y2="286.5" stroke="black" stroke-dasharray="2 2"/>
+<line x1="0.000909089" y1="169.5" x2="550.001" y2="170.5" stroke="black" stroke-dasharray="2 2"/>
+<line x1="-0.000909089" y1="50.5" x2="549.999" y2="49.5" stroke="black" stroke-dasharray="2 2"/>
+<line x1="500.5" y1="0.0028571" x2="498.557" y2="339.997" stroke="black" stroke-dasharray="2 2"/>
+<line x1="50.5" y1="0.0028571" x2="48.5572" y2="339.997" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="500" cy="287" r="29.5" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="500" cy="50" r="29.5" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="50" cy="51" r="29.5" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="49" cy="285" r="29.5" stroke="black" stroke-dasharray="2 2"/>
+<line x1="180.5" x2="180.5" y2="50" stroke="black" stroke-dasharray="2 2"/>
+<line x1="360.5" x2="360.5" y2="50" stroke="black" stroke-dasharray="2 2"/>
+<line x1="360.5" y1="287" x2="360.5" y2="337" stroke="black" stroke-dasharray="2 2"/>
+<line x1="180.5" y1="287" x2="180.5" y2="337" stroke="black" stroke-dasharray="2 2"/>
+</g>
+<defs>
+<clipPath id="clip0_1_9">
+<rect width="550" height="340" fill="white"/>
+</clipPath>
+</defs>
+</svg>
