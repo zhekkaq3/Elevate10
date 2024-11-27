@@ -2317,6 +2317,11 @@ footer a:visited {
 	transition: all 0.3s ease-in-out;
 }
 
+.col {
+	color: #FFFFFF;
+
+}
+
 footer a:hover,
 footer a:focus,
 footer a:active {
@@ -2348,6 +2353,14 @@ footer a:active {
 	border-right: 1px solid rgba(255, 255, 255, 0.02);
 }
 
+.fa-i {
+	font-size: 4.2rem;
+	line-height: 4.2rem;
+	color: #FFFFFF;
+	display: block;
+	border-right: 1px solid rgba(255, 255, 255, 0.02);
+}
+
 .footer-social-list li a:hover,
 .footer-social-list li a:focus,
 .footer-social-list li a:active {
@@ -2359,14 +2372,14 @@ footer a:active {
 }
 
 .footer-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	padding-top: 6.6rem;
 	padding-bottom: 6rem;
 }
 
-.footer-info a,
-.footer-info a:visited {
-	color: #292c35;
-}
+
 
 .footer-info a:hover,
 .footer-info a:focus,
@@ -2403,7 +2416,6 @@ footer a:active {
 	content: "|";
 	display: inline-block;
 	padding: 0 1rem 0 1.2rem;
-	color: rgba(255, 255, 255, 0.1);
 }
 
 .copyright span:last-child::after {
