@@ -5,13 +5,20 @@ body {
 }
 
 @media only screen and (max-width:600px) {
-	body {
-		background: url('/images/back_purpe_mob.jpg');
+	.bg {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('/images/back_purpe_mob.jpg');
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
+    }
 }
+
 
 .button1 {
     background-color: inherit
