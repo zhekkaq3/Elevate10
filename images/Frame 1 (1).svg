@@ -1,0 +1,7 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="120.5" x2="120.5" y2="100" stroke="black"/>
+<line x1="120.5" y1="140" x2="120.5" y2="240" stroke="black"/>
+<line x1="140" y1="120.5" x2="240" y2="120.5" stroke="black"/>
+<line y1="120.5" x2="100" y2="120.5" stroke="black"/>
+<circle cx="120" cy="121" r="4" fill="black"/>
+</svg>

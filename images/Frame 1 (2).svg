@@ -1,0 +1,20 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+							  <path id="heading-arc" d="M 30 150 a 120 120 0 1 1 240 0"></path>
+							  <path id="subheading-arc" d="M 12 150 a 138 138 0 0 0 276 0"></path>
+							</defs>
+							<use xlink:href="#heading-arc" fill="none"></use>
+							<use xlink:href="#subheading-arc" fill="none"></use>
+							<text class="arc-heading__heading" fill="#fff" text-anchor="middle">
+							  <textPath startOffset="50%" xlink:href="#heading-arc">Пневматический тир</textPath>
+							</text>
+							<text class="arc-heading__subheading" fill="#fff" text-anchor="middle">
+							  <textPath startOffset="50%" xlink:href="#subheading-arc">в центре Минска</textPath>
+							</text>
+<line x1="120.5" x2="120.5" y2="100" stroke="black"/>
+<line x1="120.5" y1="140" x2="120.5" y2="240" stroke="black"/>
+<line x1="140" y1="120.5" x2="240" y2="120.5" stroke="black"/>
+<line y1="120.5" x2="100" y2="120.5" stroke="black"/>
+<circle cx="120" cy="121" r="4" fill="black"/>
+<circle cx="120" cy="120" r="99.5" stroke="black"/>
+</svg>

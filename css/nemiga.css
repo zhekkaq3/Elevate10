@@ -1,0 +1,83 @@
+/* Основной цвет фона и градиентов */
+body {
+    background: url(../images/back_purple.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media only screen and (max-width:600px) {
+	body {
+		background: url('/images/back_purpe_mob.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    background-size: cover;
+
+	}
+}
+
+.button1 {
+    background-color: inherit
+}
+
+.button1:hover {
+    background-color: #a72424;
+}
+
+.button2 {
+  background-color: #5E17EB;
+}
+
+.main-svg {
+    box-shadow: 0 0 20px #5E17EB;
+}
+.main-svg svg {
+    box-shadow: 0 0 7px #5E17EB;
+    filter: drop-shadow(0px 0px 7px #5E17EB);
+}
+
+#intro h3 {
+  background-color: #5E17EB;
+
+}
+
+.section-intro .with-bottom-line{
+  background-color: #5E17EB;
+
+}
+
+.swiper-slide{
+    box-shadow: 0 0 20px #5E17EB;
+}
+
+.swiper-slide:hover{
+    box-shadow: 0 0 30px #5E17EB;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: #5E17EB;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #5E17EB!important;
+}
+
+.bg-red{
+  background-color: #5E17EB;
+
+}
+
+.pricing-content .price-block {
+    box-shadow: 0 0 30px #5E17EB;
+}
+
+#go-top a:hover {
+    background-color: #5E17EB;
+}
+
+.fa5:hover{
+    color: #5E17EB;
+}
+
+.card{    
+    box-shadow: 0 0 30px #5E17EB;
+}

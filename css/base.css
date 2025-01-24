@@ -511,7 +511,9 @@ textarea {
 	}
 
 	.tab-full {
-		width: 100%;
+		display: flex;
+    	flex-direction: column;
+    	align-items: flex-start;
 	}
 
 }
@@ -521,8 +523,8 @@ textarea {
  * --------------------------------------------------------------- */
 @media screen and (max-width:600px) {
 	.row {
-		padding-left: 25px;
-		padding-right: 25px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.row .row {
@@ -757,11 +759,6 @@ textarea {
 /**
  * Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
  */
-.group:before,
-.group:after {
-	content: "";
-	display: table;
-}
 
 .group:after {
 	clear: both;
