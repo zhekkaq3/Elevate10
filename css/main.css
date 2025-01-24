@@ -67,13 +67,20 @@ body {
 }
 
 @media only screen and (max-width:600px) {
-	body {
-		background: url('/images/red_back_mobi.jpg');
-		background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: top left;
-	}
+	
+		.bg {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: url('/images/red_back_mobi.jpg');
+			background-attachment: scroll;
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: cover;
+		}
+
 }
 
 /* ------------------------------------------------------------------- 
