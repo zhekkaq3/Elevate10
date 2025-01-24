@@ -1,6 +1,6 @@
 /* Основной цвет фона и градиентов */
 body {
-    background: url(../images/back_purple.jpg) no-repeat center center fixed;
+    background: url('/images/back_purple.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -9,10 +9,8 @@ body {
 		background: url('/images/back_purpe_mob.jpg');
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-position: center;
-    background-size: cover;
-
-	}
+        background-position: top center;
+        background-size: contain;
 }
 
 .button1 {
