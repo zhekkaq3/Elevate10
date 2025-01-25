@@ -566,6 +566,8 @@ img.pull-left {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .section-intro h2 {
@@ -1010,6 +1012,7 @@ header .logo a {
 .button2 {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 100%;
 	color: #FFFFFF;
 	font-size: 18px;
@@ -1037,6 +1040,7 @@ header .logo a {
 	}
 	.button1, .button2 {
 		font-size: 14px;
+		padding: 0 2px;
 	}
 }
 
@@ -1821,6 +1825,9 @@ h3 {
 	}
 	.pricing-content .price-block.primary{
 		padding-top: 6rem;
+	}
+	.pricing-content .price-block .features li strong{
+		margin-right: 0;
 	}
 
 }
