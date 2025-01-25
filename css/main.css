@@ -1561,6 +1561,7 @@ h3 {
 	font-size: 12px;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
+	line-height: 1.8;
 }
 
 .pricing-content .group {
