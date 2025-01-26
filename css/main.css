@@ -1768,6 +1768,11 @@ h3 {
 	color: #FFFFFF;
 }
 
+.p-desc{
+	font-size: 8px;
+	margin: 0;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * pricing 
@@ -1779,7 +1784,7 @@ h3 {
 
 	.pricing-content .bgrid {
 		padding: 0;
-		width: 49%;
+		/* width: 49%; */
 		clear: none;
 	}
 
@@ -1801,12 +1806,11 @@ h3 {
 
 @media only screen and (max-width:600px) {
 	.pricing-content {
-		max-width: 400px;
 		margin: 0;
 	}
 
 	.pricing-content .group-price {
-		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr))
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr))
 	}
 
 	.pricing-content .group {
@@ -1891,14 +1895,18 @@ footer a:active {
 }
 
 .fa5 {
-	font-size: 50px;
+	font-size: 30px;
 	transition: all 0.1s linear;
 }
-.fa5:hover {
+
+.a-footer{
+	display: flex;
+	gap: 10px;
+}
+.a-footer:hover {
 	color: #ed254d;
 	scale: 1.05;
 }
-
 
 .footer-social-list li a:hover,
 .footer-social-list li a:focus,
@@ -1912,19 +1920,14 @@ footer a:active {
 
 .footer-info {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
 	justify-content: space-around;
 	padding-top: 6rem;
 }
 
 .footer-bottom {
 	font-size: 10px;
-}
-
-.footer-info a:hover,
-.footer-info a:focus,
-.footer-info a:active {
-	color: #FFFFFF;
 }
 
 .footer-info h4 {
@@ -2128,6 +2131,13 @@ footer a:active {
     background-color: #ff0000!important;
     opacity: 1;
 }
+
+#swiper .a-slider{
+	font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
 
 /* Стили для бегущей строки */
 .marquee {
