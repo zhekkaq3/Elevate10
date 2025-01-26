@@ -1772,7 +1772,9 @@ h3 {
 	font-size: 8px;
 	margin: 0;
 }
-
+.sponsor-text {
+	line-height: 2;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * pricing 
