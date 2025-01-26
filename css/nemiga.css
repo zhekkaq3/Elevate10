@@ -86,3 +86,13 @@ body {
 .card{    
     box-shadow: 0 0 30px #5E17EB;
 }
+
+.pricing-content .primary {
+    background-color: #5E17EB;
+    opacity: 80%;
+}
+
+.p-black {
+    box-shadow: 0 0 30px #5E17EB;
+
+}
