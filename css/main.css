@@ -2191,4 +2191,52 @@ footer a:active {
 	}
 }
 
+.accordion {
+	background-color: rgba(0,0,0,0.8);
+	
+}
+
+.accordion-item {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.accordion-header {
+	position: relative;
+	padding: 8px;
+	opacity: 0.8;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #a72424;
+	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+	font-size: 12px;
+	padding: 15px;
+	display: none;
+}
+
+.accordion-item.active .accordion-content {
+	display: block;
+}
+
+/* Стрелочка */
+.accordion-header::after {
+	content: '▼';
+	font-size: 14px;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: transform 0.4s ease;
+}
+
+/* Стрелочка при открытом аккордеоне */
+.accordion-item.active .accordion-header::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
 

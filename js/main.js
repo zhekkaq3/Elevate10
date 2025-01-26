@@ -284,6 +284,23 @@
 
 	});
 
+	// Добавляем обработчики событий для аккордеона
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        header.addEventListener('click', () => {
+            // Закрываем все открытые элементы
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            // Открываем/закрываем текущий элемент
+            item.classList.toggle('active');
+        });
+    });
+
 
 	//modal
 	// var modal1 = $(".modal1");
