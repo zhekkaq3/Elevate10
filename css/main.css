@@ -1544,6 +1544,7 @@ h3 {
 
 .bg-b{
 	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 1rem;
 }
 
 .bg-red {
@@ -1570,6 +1571,9 @@ h3 {
 .m-bottom{
 	margin-bottom: 2rem;
 }
+.m-top{
+	margin-top: 4rem;
+}
 .p-bottom span{
 	font-size: 14px;
 	font-weight: bolder;
@@ -1580,13 +1584,13 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	padding: 3rem 0;
 }
 
 .pricing-content .group-price{
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
+	padding-bottom: 2rem;
 }
 
 .group-price .bgrid {
@@ -1875,7 +1879,7 @@ footer a:visited {
 
 .col {
 	color: #FFFFFF;
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 1.4px;
 	text-align: left;
 	cursor: pointer;
@@ -1966,7 +1970,7 @@ footer a:active {
 		font-size: 14px;
 	}
 	.col{
-		font-size: 8px;
+		font-size: 10px;
 		line-height: 22px;
 	}
 	.fa5 {
