@@ -335,6 +335,13 @@ window.addEventListener('click', (event) => {
 	}
 });
 
+// Добавляем обработчик для touch-событий
+window.addEventListener('touchstart', (event) => {
+    if (event.target === modal) {
+        closeModalHandler();
+    }
+});
+
 // Добавляем обработчики клика на карточки
 document.querySelectorAll('.card').forEach((card, index) => {
 	card.addEventListener('click', () => {
