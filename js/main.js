@@ -341,7 +341,7 @@ window.addEventListener('click', (event) => {
 });
 
 // Добавляем обработчик для touch-событий
-window.addEventListener('touch', (event) => {
+window.addEventListener('touchend', (event) => {
     if (event.target === modal) {
         closeModalHandler();
     }
