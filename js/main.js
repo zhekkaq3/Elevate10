@@ -342,12 +342,14 @@ window.addEventListener('touchstart', (event) => {
     }
 });
 
-// Добавляем обработчики клика на карточки
-document.querySelectorAll('.card').forEach((card, index) => {
-	card.addEventListener('click', () => {
-		const imageSrc = card.querySelector('img').src;
-		const title = card.querySelector('h5').textContent;
-		const description = `Описание для ${title}`; // Замените на реальное описание
-		openModal(imageSrc, title, description);
-	});
+// Открытие модального окна с задержкой
+document.querySelectorAll('.card').forEach((card) => {
+    card.addEventListener('click', () => {
+        setTimeout(() => {
+            const imageSrc = card.querySelector('img').src;
+            const title = card.querySelector('h5').textContent;
+            const description = card.getAttribute('data-description');
+            openModal(imageSrc, title, description);
+        }, 100);
+    });
 });
