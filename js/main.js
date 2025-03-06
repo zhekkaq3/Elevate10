@@ -309,6 +309,7 @@ const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
 const closeModal = document.querySelector('.close-modal');
+let isModalClosing = false; // Флаг для отслеживания закрытия модального окна
 
 // Функция для открытия модального окна
 function openModal(imageSrc, title, description) {
@@ -321,8 +322,12 @@ function openModal(imageSrc, title, description) {
 
 // Функция для закрытия модального окна
 function closeModalHandler() {
-	modal.style.display = 'none';
-	document.body.classList.remove('no-scroll'); // Включаем скролл обратно
+    modal.style.display = 'none';
+    document.body.classList.remove('no-scroll');
+    isModalClosing = true; // Устанавливаем флаг
+    setTimeout(() => {
+        isModalClosing = false; // Сбрасываем флаг через 100 мс
+    }, 100);
 }
 
 // Закрытие модального окна при клике на крестик
@@ -345,11 +350,10 @@ window.addEventListener('touchstart', (event) => {
 // Открытие модального окна с задержкой
 document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('click', () => {
-        setTimeout(() => {
-            const imageSrc = card.querySelector('img').src;
-            const title = card.querySelector('h5').textContent;
-            const description = card.getAttribute('data-description');
-            openModal(imageSrc, title, description);
-        }, 100);
+        if (isModalClosing) return; // Если модальное окно закрывается, не открываем новую карточку
+        const imageSrc = card.querySelector('img').src;
+        const title = card.querySelector('h5').textContent;
+        const description = card.getAttribute('data-description');
+        openModal(imageSrc, title, description);
     });
 });
