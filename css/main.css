@@ -2224,7 +2224,8 @@ footer a:active {
 }
 
 .accordion-content {
-	font-size: 12px;
+	font-size: 11px;
+	line-height: 1.9;
 	padding: 15px;
 	display: none;
 }
