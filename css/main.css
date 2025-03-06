@@ -1288,12 +1288,19 @@ h3 {
 .card {
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(167, 36, 36, 0.8);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card div {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .card:hover {
@@ -1307,14 +1314,19 @@ h3 {
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 1px solid #eee;
 }
 
 .card h5 {
     font-size: 1.2rem;
-    margin: 1rem 0;
+    padding: 1rem 0;
     color: #eee;
     text-align: center;
+    border-top: 1px solid #eee;
+
+}
+
+.font-8 {
+	font-size: 8px!important;
 }
 
 /* Адаптивность для мобильных устройств */
@@ -1798,12 +1810,6 @@ h3 {
 		clear: both;
 	}
 
-	.pricing-content .bgrid:last-child {
-		clear: both;
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.big {
 		padding-left: 0!important;
 	}
@@ -2165,7 +2171,7 @@ footer a:active {
 .marquee-content {
     display: inline-block;
     padding-left: 100%; /* Начальное смещение текста за пределы экрана */
-    animation: marquee 30s linear infinite; /* Анимация бегущей строки */
+    animation: marquee 60s linear infinite; /* Анимация бегущей строки */
 }
 
 .marquee-content span {
@@ -2197,7 +2203,7 @@ footer a:active {
 
 .accordion {
 	background-color: rgba(0,0,0,0.8);
-	
+	width: 100%;
 }
 
 .accordion-item {
