@@ -118,3 +118,8 @@ body {
 #swiper .a-slider{
     color: white ;
 }
+
+.modal-content {
+    background: rgb(94 23 235 / 80%);
+    box-shadow: 0 0 30px #5E17EB;
+}
