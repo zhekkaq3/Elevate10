@@ -301,47 +301,46 @@
         });
     });
 
-
-	//modal
-	// var modal1 = $(".modal1");
-	// var modal2 = $(".modal2");
-
-
-	// function setModal() {
-	// 	modal1.css("display", "none");
-	// 	modal2.css("display", "none");
-	// }
-
-	// $(".button1").click(function () {
-	// 	modal1.css("display", "block");
-	// });
-
-	// $(".button2").click(function () {
-	// 	modal2.css("display", "block");
-	// });
-
-	// $(".close").click(function () {
-	// 	setModal();
-	// });
-
-	// $(modal1).click(function (e) {
-	// 	var target = e.target;
-	// 	if (!$(".content").is(target) && $(".content").has(target).length === 0) {
-	// 		setModal();
-	// 	}
-	// });
-	// $(modal2).click(function (e) {
-	// 	var target = e.target;
-	// 	if (!$(".content").is(target) && $(".content").has(target).length === 0) {
-	// 		setModal();
-	// 	}
-	// });
-
-	// $(document).keydown(function (e) {
-	// 	if (e.which == 27) {
-	// 		setModal();
-	// 	}
-	// });
-
-
 })(jQuery);
+
+// Получаем элементы модального окна
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modal-image');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+const closeModal = document.querySelector('.close-modal');
+
+// Функция для открытия модального окна
+function openModal(imageSrc, title, description) {
+	modalImage.src = imageSrc;
+	modalTitle.textContent = title;
+	modalDescription.textContent = description;
+	modal.style.display = 'block';
+	document.body.classList.add('no-scroll'); // Отключаем скролл
+}
+
+// Функция для закрытия модального окна
+function closeModalHandler() {
+	modal.style.display = 'none';
+	document.body.classList.remove('no-scroll'); // Включаем скролл обратно
+}
+
+// Закрытие модального окна при клике на крестик
+closeModal.addEventListener('click', closeModalHandler);
+
+// Закрытие модального окна при клике вне его области
+window.addEventListener('click', (event) => {
+	if (event.target === modal) {
+		closeModalHandler();
+	}
+});
+
+// Добавляем обработчики клика на карточки
+document.querySelectorAll('.card').forEach((card, index) => {
+	card.addEventListener('click', () => {
+		const imageSrc = card.querySelector('img').src;
+		const title = card.querySelector('h5').textContent;
+		const description = `Описание для ${title}`; // Замените на реальное описание
+		openModal(imageSrc, title, description);
+	});
+});

@@ -297,80 +297,80 @@
 				<div class="guns_list">
 					<div class="card">
 						<div>
-							<img src="/images/guns/1.png" alt="Desert Eagle" loading="lazy">
+							<img src="/images/guns/1.png" alt="АК- 74" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>АК- 74</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/13.png" alt="Pistol" loading="lazy">
+							<img src="/images/guns/13.png" alt="АК 105" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>АК 105</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/14.png" alt="Revolver" loading="lazy">
+							<img src="/images/guns/14.png" alt="М4 CQB" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>М4 CQB</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/11.png" alt="Shotgun" loading="lazy">
+							<img src="/images/guns/11.png" alt="HK G36" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>HK G36</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/7.png" alt="SMG" loading="lazy">
+							<img src="/images/guns/7.png" alt="Glock 17" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Glock 17</h5>
 					</div>
 
 					<div class="card">
 						<div>
-							<img src="/images/guns/15.png" alt="LMG" loading="lazy">
+							<img src="/images/guns/15.png" alt="Colt 1911" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Colt 1911</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/8.png" alt="LMG" loading="lazy">
+							<img src="/images/guns/8.png" alt="Beretta 92" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Beretta 92</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/12.png" alt="Crossbow" loading="lazy">
+							<img src="/images/guns/12.png" alt="Walther P99" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Walther P99</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/16.png" alt="Crossbow" loading="lazy">
+							<img src="/images/guns/16.png" alt="Лук спортивный" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Лук спортивный</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/17.png" alt="Crossbow" loading="lazy">
+							<img src="/images/guns/17.png" alt="Лук спортивный" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Лук спортивный</h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/18.png" alt="Crossbow" loading="lazy">
+							<img src="/images/guns/18.png" alt="Лук детский" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Лук детский </h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/19.png" alt="Crossbow" loading="lazy">
+							<img src="/images/guns/19.png" alt="MР 61С" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>MР 61С </h5>
 					</div>
 					<div class="card">
 						<div>
-							<img src="/images/guns/10.png" alt="Crossbow" loading="lazy">
+							<img src="/images/guns/10.png" alt="Арбалет" data-description="Пневматическая копия АК-74, калибр 4.5 мм." loading="lazy">
 						</div>
 						<h5>Арбалет</h5>
 					</div>
@@ -1052,24 +1052,13 @@
 		<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
 	</div>
 
-
-	<!-- modal
-   ================================================== -->
-	<div class="modal modal1">
-		<div class="overlay">
-			<div class="content">
-				<i class="fa fa-times close" aria-hidden="true"></i>
-				<h3>Модальное окно</h3>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal modal2">
-		<div class="overlay">
-			<div class="content">
-				<i class="fa fa-times close" aria-hidden="true"></i>
-				<h3>Модальное окно2</h3>
-			</div>
+	<!-- Модальное окно -->
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<img id="modal-image" src="" alt="Оружие">
+			<h3 id="modal-title"></h3>
+			<p id="modal-description"></p>
 		</div>
 	</div>
 
