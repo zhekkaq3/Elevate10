@@ -1433,7 +1433,7 @@ h3 {
 
 	.info-entry .info-entry-content .media-wrap {
 		position: static;
-		width: 100%;
+		/* width: 100%; */
 		-webkit-transform: translateY(0);
 		-ms-transform: translateY(0);
 		transform: translateY(0);
@@ -1712,7 +1712,7 @@ h3 {
 	padding: .6rem 0;
 	border-bottom: 1px solid white;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .features li p, .text-small {
@@ -1723,7 +1723,7 @@ h3 {
 }
 
 .pricing-content .price-block .features li strong {
-	margin-right: 40px;
+	margin-right: 20px;
 }
 
 .pricing-content .price-block .features li:last-child {
@@ -1790,6 +1790,10 @@ h3 {
 }
 .sponsor-text {
 	line-height: 2;
+}
+
+.w-6 {
+	width: 60%!important;
 }
 /* ------------------------------------------------------------------- 
  * responsive:
